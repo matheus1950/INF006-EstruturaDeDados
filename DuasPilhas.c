@@ -68,7 +68,7 @@ void push_ordenado_P3(int P1[], int P2[], int P3[], int *topo1, int *topo2, int 
 	int vetor[TAM], j = 0;
 
 	for(int i = *topo1; i > 0; i--)
-		push(topo3, pop(topo1, P1), P3); //por que aqui não preciso de ponteiro?(no pop)
+		push(topo3, pop(topo1, P1), P3);
 
 	for(int i = *topo2; i > 0; i--)
 		push(topo3, pop(topo2, P2), P3);
