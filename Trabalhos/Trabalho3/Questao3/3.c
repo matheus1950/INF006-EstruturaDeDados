@@ -116,7 +116,7 @@ No* remover(No* raiz, int numero){
 				free(raiz);
 				return NULL;
 			}
-			else if((raiz->esquerda == NULL && raiz->direita != NULL) || (raiz->esquerda != NULL && raiz->direita == NULL)){ //remove nós de apenas 1 filho(ou direita ou esquerda) - a operação entre parenteses tem o intuito de substituir o "ou exclusivo", que não está presente em C
+			else if(raiz->direita != NULL || raiz->esquerda != NULL){ //remove nós de apenas 1 filho(ou direita ou esquerda)
 				No*	aux;
 				if(raiz->esquerda != NULL)
 					aux = raiz->esquerda;
